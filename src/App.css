@@ -1,0 +1,19 @@
+.parentDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  background: linear-gradient(
+    to top left,
+    rgb(231, 228, 230),
+    rgb(5, 139, 242)
+  );
+}
+.childDiv {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(252, 248, 248);
+  border: 1px solid white;
+  border-radius: 10px;
+}
