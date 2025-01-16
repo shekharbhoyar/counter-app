@@ -1,9 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .parentDiv {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
-  width: 100%; /* Full width */
+  height: 100vh;
+  width: 100%;
   background: linear-gradient(
     to top left,
     rgb(231, 228, 230),
@@ -16,4 +19,43 @@
   background-color: rgb(252, 248, 248);
   border: 1px solid white;
   border-radius: 10px;
+}
+.accorp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: pink;
+  gap: 10px;
+}
+
+.accorc {
+  width: 600px; /* height: 50px; */
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: normal;
+  padding: 10px;
+  gap: 10px;
+}
+.accorc-header {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-between; /* Space between title and button */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.accorc-content {
+  padding-top: 5px;
+  font-size: 15px;
+  color: white;
 }

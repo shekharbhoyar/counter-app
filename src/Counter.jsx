@@ -15,8 +15,9 @@ export default function Counter() {
   return (
     <div className="parentDiv">
         <div className="childDiv">
-        <h1>Counter</h1>
-<h2>{counter}</h2>
+        <h1  className="text-3xl font-bold"
+>Counter</h1>
+<h2 className={counter>=0?"text-2xl font-bold text-green-500":"text-2xl font-bold text-red-500"} >{counter}</h2>
 
 <Button onClick={increment} variant="contained">Increment</Button>
 <br />
